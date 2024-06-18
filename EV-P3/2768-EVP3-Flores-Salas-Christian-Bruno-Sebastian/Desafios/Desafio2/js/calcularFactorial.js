@@ -12,7 +12,6 @@ do {
 
 for (let i = 1; i <= numero; i++) {
     factorial *= i;
-    console.log(i, ' * ', numero, ' = ', factorial);
 }
 
 resultado = factorial;

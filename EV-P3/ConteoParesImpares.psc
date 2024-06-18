@@ -1,20 +1,16 @@
 Proceso ConteoParesImpares
-	inicio <- 0
 	final <- 0
 	pares <- 0
 	impares <- 0
-	iterador <- 0
+	iterador <- 1
 	Repetir
-		Escribir 'Ingrese el número inicial del rango:'
-		Leer inicio
-		Escribir 'Ingrese el número final del rango:'
+		Escribir 'Ingrese hasta que numero quiere ver los pares e impares:'
 		Leer final
-		Si inicio>final Entonces
-			Escribir 'Por favor, ingrese valores válidos. El número inicial debe ser menor o igual al número final.'
+		Si 0>final Entonces
+			Escribir 'Por favor, ingrese valores válidos. El dato debe ser mayor a 0.'
 		FinSi
-	Hasta Que inicio<=final
-	iterador <- inicio
-	Mientras iterador<final Hacer
+	Hasta Que 0<final
+	Mientras iterador<=final Hacer
 		Si iterador MOD 2=0 Entonces
 			pares <- pares+1
 		SiNo
@@ -22,6 +18,6 @@ Proceso ConteoParesImpares
 		FinSi
 		iterador <- iterador+1
 	FinMientras
-	Escribir 'Entre ', inicio, ' y ', final, ' hay ', pares, ' pares'
-	Escribir 'Entre ', inicio, ' y ', final, ' hay ', impares, ' impares'
+	Escribir 'Entre 0 y ', final, ' hay ', pares, ' pares'
+	Escribir 'Entre 0 y ', final, ' hay ', impares, ' impares'
 FinProceso

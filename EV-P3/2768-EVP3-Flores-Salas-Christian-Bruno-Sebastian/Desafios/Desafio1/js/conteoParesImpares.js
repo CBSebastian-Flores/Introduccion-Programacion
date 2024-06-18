@@ -6,7 +6,7 @@ let impares = 0;
 let iterador = 1;
 
 do {
-    final = parseInt(prompt("Ingrese hasta que numero quiere:"));
+    final = parseInt(prompt("Ingrese hasta que numero quiere ver los pares e impares:"));
 
     if (isNaN(final) || 0 >= final) {
         alert("Por favor, ingrese valores válidos. El valor debe ser mayor a 0");
