@@ -8,13 +8,13 @@ let iterador = 1;
 do {
     final = parseInt(prompt("Ingrese hasta que numero quiere:"));
 
-    if (isNaN(final) || 0 > final) {
+    if (isNaN(final) || 0 >= final) {
         alert("Por favor, ingrese valores válidos. El valor debe ser mayor a 0");
     }
 
-} while (isNaN(final) || 0 > final);
+} while (isNaN(final) || 0 >= final);
 
-while (iterador < final) {
+while (iterador <= final) {
     if (iterador % 2 === 0) {
         pares++;
         console.log(iterador, "es Par");
