@@ -16,11 +16,17 @@ do {
 for (let i = 1; i <= cantidad; i++) {
 
     let numero;
+    let terminar;
 
     do {
         numero = parseInt(prompt(`Coloque el número ${i}:`));
         if (isNaN(numero) || numero === 0) {
             alert('El valor debe ser un numero');
+            terminar = confirm("Quieres terminar el proceso?");
+        }
+        if (terminar){
+            alert('Para poder utilizar denuevo el programa reinicia la pagina')
+            pass;
         }
     } while (isNaN(numero) || numero === 0);
 
