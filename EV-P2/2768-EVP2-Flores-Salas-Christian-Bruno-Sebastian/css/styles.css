@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/Fondo-Parque.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor{
+    background-color: rgba(255, 255, 255); /* Agrega transparencia al fondo blanco */
+    width: 40%;
+    margin: 250px auto;
+    border: 2px solid black;
+    padding: 15px; /* Agrega padding al contenedor para evitar que el contenido toque los bordes */
+    box-shadow: 0px 0px 50px 5px rgba(0, 0, 0);
+}
+
+#cabecera{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#responsable{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+#datos{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.info p{
+    padding: 5px;
+    text-align: center;
+}
+
+#fila-tipo-entrada p{
+    text-align: left;
+}
+
+#precio-por-entrada{
+    padding: 10px;
+    text-align: left;
+}
+
+#resultado{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+#footer{
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+}
