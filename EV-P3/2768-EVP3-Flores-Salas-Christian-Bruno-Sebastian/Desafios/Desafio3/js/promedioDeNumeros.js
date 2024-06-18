@@ -15,12 +15,12 @@ do {
 
 for (let i = 1; i <= cantidad; i++) {
 
-    let numero = 0;
+    let numero;
 
     do {
         numero = parseInt(prompt(`Coloque el número ${i}:`));
         if (isNaN(numero) || numero === 0) {
-            alert('El valor debe ser un numero')
+            alert('El valor debe ser un numero');
         }
     } while (isNaN(numero) || numero === 0);
 
