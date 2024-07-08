@@ -2,7 +2,7 @@ let productos = [];
 
 let agregar = document.getElementById("btn-agregar");
 let mostrar = document.getElementById("btn-mostrar");
-let productosMostrar = document.getElementById("mostrador-datos")
+let productosMostrar = document.getElementById("mostrador-datos");
 
 agregar.addEventListener("click", agregarProducto);
 mostrar.addEventListener("click", mostrarProductos);
@@ -40,10 +40,13 @@ function agregarProducto() {
         nombre: nombre,
         modelo: modelo,
         cantidad: cantidad,
-    }
+    };
 
     productos.push(producto);
-    console.log(productos)
+
+    alert("Agregando su producto... ");
+
+    alert("Su producto ha sido agregado correctamente!🤩");
 }
 
 function mostrarProductos() {
