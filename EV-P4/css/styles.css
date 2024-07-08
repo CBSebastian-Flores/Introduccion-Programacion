@@ -7,7 +7,8 @@
 }
 
 header {
-    background-color: black;
+    background: rgb(34, 34, 37);
+    background: linear-gradient(180deg, rgba(34, 34, 37, 1) 0%, rgba(0, 0, 0, 1) 100%);
     color: white;
     padding: 28px;
 
@@ -15,31 +16,34 @@ header {
 }
 
 main {
-    background-color: darkgray;
     text-align: center;
 
     padding: 25px 0px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 17, 121, 1) 42%, rgba(85, 0, 159, 1) 100%);
 }
 
-#contenido{
+#contenido {
     width: 750px;
 
     margin: 0px auto;
     padding: 10px 0px;
+
 }
 
-#datos{
-    background-color: rgb(0, 136, 255);
+#datos {
+    background-color: black;
     border-radius: 10px;
 }
 
-#tipo-datos{
+#tipo-datos {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    color: white;
 }
 
-#tipo-datos p{
+#tipo-datos p {
     width: 25%;
 }
 
@@ -50,7 +54,7 @@ main {
 
     margin: 0px auto;
     padding: 10px 20px;
-    border-bottom: 10px;
+    border-radius: 0px 10px;
 
     overflow-y: scroll;
 }
@@ -59,25 +63,44 @@ main {
     width: 25%;
 }
 
-.datos-producto{
+.datos-producto {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    padding: 10px 0px;
+    padding: 12px 0px;
+
+    border-bottom: 2px solid rgb(64, 64, 64);
+    transition: 400ms all ease;
+}
+
+.datos-producto:hover{
+    background-color: gray;
 }
 
 #botones {
     margin: 20px 0px 0px;
 }
 
-.btn{
-    padding: 10px 20px;
+.btn {
+    padding: 12px 25px;
     border-radius: 10px;
     margin: 0px 10px;
+    background-color: black;
+    color: white;
+    border-style: none;
+
+    transition: 250ms all ease;
+}
+
+.btn:hover{
+    background-color: rgb(28, 28, 28);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 footer {
-    background-color: black;
+    background: rgb(34, 34, 37);
+    background: linear-gradient(0deg, rgba(34, 34, 37, 1) 0%, rgba(0, 0, 0, 1) 100%);
     color: white;
     padding: 20px;
 
